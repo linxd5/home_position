@@ -59,7 +59,7 @@
      }
 
      function onSuccess(heading) {
-         var rotationValue = 360-heading.magneticHeading-27;
+         var rotationValue = 360-heading.magneticHeading;
          //var rotationValue = heading.magneticHeading;
          //alert(rotationValue);
          //alert("magneticHeading: " + heading.magneticHeading);
