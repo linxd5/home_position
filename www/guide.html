@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Maps</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/Maps.css" rel="stylesheet" />
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+        <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script type="text/javascript" src="js/svg.min.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/Ajax.js"></script>
+    <script type="text/javascript" src="js/Maps.js"></script>
+    <script type="text/javascript" src="js/indexnew.js"></script>
+</head>
+<body ng-controller="MainCtrl"style="position:relative;">
+     <!--  头部导航栏开始 -->
+    <header class="bar bar-header" style="background:#ccc;">
+       <!-- <button class="button icon-left ion-chevron-left button-clear button-dark">返回</button>-->
+            <button class="button icon-left  ion-chevron-left" style="background:#ccc; border:none;"></button>
+            <h1 class="title">导航</h1>
+    </header>
+    <nav class="bar bar-subheader">
+        <div class="list">
+         <label class="item item-input">
+             <span class="input-label"><i class="icon ion-search"></i></span>
+             <input type="text" placeholder="请选择目标地址">
+        </label>
+    </nav>
+     <!--  头部导航栏结束 -->
+
+       <!--内容开始-->
+    <div id="svgContainer" class="scroll-content">
+        <div id="Maps">
+         <!--回到当前位置-->
+                <div class="location">
+                    <i class="icon ion-location"></i>
+                </div>
+                <!--地图的放大缩小-->
+                <div class="size">
+                    <i id="plus" class="icon ion-plus" onclick="zoom('zoomIn');"></i>
+                    <i id="minus" class="icon ion-minus" onclick="zoom('zoomOut');"></i>
+                </div>
+            
+        </div>
+    </div>
+ <!--   底部导航栏开始-->
+      <footer class="tabs bar-tabs tabs-icon-only" style="background:#000;">
+            <div class="foot_left"><span class="icon ion-close"></span></div>
+            <div class="foot_right">
+                <div class="r_left">
+                    <span class="icon ion-clock">1</span>
+                    <span>剩余时间</span>
+                </div>
+                <div class="r_right">
+                    <span class="icon ion-record">3</span>
+                    <span>剩余路程</span>
+                </div>
+            </div>
+     </footer>
+     <!--   底部导航栏结束 -->
+
+</body>
+</html>
