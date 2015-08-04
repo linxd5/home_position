@@ -54,18 +54,28 @@
 
 
      function startWatch() {
-         var options = { frequency: 250 };
+         var options = { frequency: 20 };
          g_watchID = navigator.compass.watchHeading(onSuccess, onError, options);
      }
 
      function onSuccess(heading) {
-         var rotationValue = g_PI2-heading.magneticHeading/g_toRAD;
-         //groupShape1.transform({rotation: rotationValue});
-         groupShape1.transform({rotation: 90});
+         var rotationValue = 360-heading.magneticHeading-27;
+         //var rotationValue = heading.magneticHeading;
+         //alert(rotationValue);
+         //alert("magneticHeading: " + heading.magneticHeading);
+         //alert("g_toRAD: " + g_toRAD);
+         //alert("divide: " + heading.magneticHeading/g_toRAD);
+         //alert("rotationValue: " + rotationValue);
+         groupShape1.transform({rotation: rotationValue});
+
+         // Test for mobile fixed rotation
+         //groupShape1.transform({rotation: 90});
      }
 
      function onError(compassError) {
          alert("Compass error: " + compassError.code);
      }
-     groupShape1.transform({rotation: 90});
+
+     // Test for PC fixed rotation
+     //groupShape1.transform({rotation: 90});
  };

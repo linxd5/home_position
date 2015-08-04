@@ -48,41 +48,41 @@
         </div>
     </div>
  <!--   底部导航栏开始-->
-      <footer class="tabs bar-tabs" ng-controller="footerController">
-            <a  ng-click="nearby()" id="nearby" class="tab-item" style="width:179px; text-align;center;">
-                <img src="img/1_10.png" width="179" height="100%" alt="nearby">
-            </a>
-            <a ng-click="line()" id="line" class="tab-item" style=" border-left:2px dotted #000; border-right:2px dotted #000; text-align:center ">
-                <img src="img/1_11.png" width="179" height="100%" alt="line">
-            </a>
-            <a ng-click="guide()" id="guide" class="tab-item" style="border-right:2px dotted #000; text-align:center;">
-                <img src="img/1_12.png" width="179" height="100%" alt="guide">
-            </a>
-            <a ng-click="message()" id="message" class="tab-item" style="text-align:center;">
-                <img src="img/1_13.png" width="179" height="100%" alt="message">
-            </a>
-    </footer>
-     <!--  底部导航栏结束 -->
-    <script type="text/javascript">
-       var myApp = angular.module("myApp", []);
+      <!--&lt;!&ndash;<footer class="tabs bar-tabs" ng-controller="footerController">&ndash;&gt;-->
+            <!--&lt;!&ndash;<a  ng-click="nearby()" id="nearby" class="tab-item" style="width:179px; text-align;center;">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="img/1_10.png" width="179" height="100%" alt="nearby">&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a ng-click="line()" id="line" class="tab-item" style=" border-left:2px dotted #000; border-right:2px dotted #000; text-align:center ">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="img/1_11.png" width="179" height="100%" alt="line">&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a ng-click="guide()" id="guide" class="tab-item" style="border-right:2px dotted #000; text-align:center;">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="img/1_12.png" width="179" height="100%" alt="guide">&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a ng-click="message()" id="message" class="tab-item" style="text-align:center;">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="img/1_13.png" width="179" height="100%" alt="message">&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</footer>&ndash;&gt;-->
+     <!--&lt;!&ndash;&lt;!&ndash;  底部导航栏结束 &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<script type="text/javascript">&ndash;&gt;-->
+       <!--&lt;!&ndash;var myApp = angular.module("myApp", []);&ndash;&gt;-->
 
-            myApp.controller("footerController", function($scope) {
-            $scope.nearby = function() {
-                $scope.user = angular.copy($scope.master);
-            };
-            $scope.line = function() {
-                $scope.user = angular.copy($scope.master);
-            };
-            $scope.guide = function() {
-                $scope.user = angular.copy($scope.master);
-            };
-            $scope.message = function() {
-                $scope.user = angular.copy($scope.master);
-            };
+            <!--&lt;!&ndash;myApp.controller("footerController", function($scope) {&ndash;&gt;-->
+            <!--&lt;!&ndash;$scope.nearby = function() {&ndash;&gt;-->
+                <!--&lt;!&ndash;$scope.user = angular.copy($scope.master);&ndash;&gt;-->
+            <!--&lt;!&ndash;};&ndash;&gt;-->
+            <!--&lt;!&ndash;$scope.line = function() {&ndash;&gt;-->
+                <!--&lt;!&ndash;$scope.user = angular.copy($scope.master);&ndash;&gt;-->
+            <!--&lt;!&ndash;};&ndash;&gt;-->
+            <!--&lt;!&ndash;$scope.guide = function() {&ndash;&gt;-->
+                <!--&lt;!&ndash;$scope.user = angular.copy($scope.master);&ndash;&gt;-->
+            <!--&lt;!&ndash;};&ndash;&gt;-->
+            <!--&lt;!&ndash;$scope.message = function() {&ndash;&gt;-->
+                <!--&lt;!&ndash;$scope.user = angular.copy($scope.master);&ndash;&gt;-->
+            <!--&lt;!&ndash;};&ndash;&gt;-->
 
-            $scope.reset();
+            <!--&lt;!&ndash;$scope.reset();&ndash;&gt;-->
 
-        })
-    </script>
+        <!--&lt;!&ndash;})&ndash;&gt;-->
+    <!--</script>-->
 </body>
 </html>
