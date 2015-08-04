@@ -54,7 +54,7 @@
 
 
      function startWatch() {
-         var options = { frequency: 20 };
+         var options = { frequency: 2 };
          g_watchID = navigator.compass.watchHeading(onSuccess, onError, options);
      }
 
@@ -66,8 +66,9 @@
          //alert("g_toRAD: " + g_toRAD);
          //alert("divide: " + heading.magneticHeading/g_toRAD);
          //alert("rotationValue: " + rotationValue);
-         groupShape1.transform({rotation: rotationValue});
+         //groupShape1.transform({rotation: rotationValue});
 
+         groupShape1.transform({rotation: rotationValue});
          // Test for mobile fixed rotation
          //groupShape1.transform({rotation: 90});
      }
